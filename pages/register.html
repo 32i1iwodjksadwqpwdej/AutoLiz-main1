@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AutoLiz</title>
+    <title>Регистрация</title>
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/normalize.css" />
   </head>
@@ -48,141 +48,56 @@
       </div>
     </header>
 
-    <main class="main">
+    <main class="main main--register">
       <div class="container">
-        <h1 class="main__title">
+        <h1 class="main__title main__title--register">
           Аренда автомобилей в <span class="main__title-red">Якутске</span>
         </h1>
-        <section class="showcase">
-          <div class="showcase__card">
-            <a href="/pages/landcruiser.html" class="showcase__image-container">
-              <img
-                class="showcase__image"
-                src="img/toyota_land_cruiser_1014412 2.png"
-                alt=""
-              />
-            </a>
-            <h1 class="showcase__title">Toyota Land Cruiser</h1>
-            <a href="/pages/landcruiser.html" class="showcase__paragraph">
-              Посмотреть информацию
-            </a>
+        <div class="main__register">
+          <div class="main__register-svg">
+            <div class="main__register-svg-back">
+              <a href="/index.html"><img src="/img/rowbacksvg.svg" alt="" /></a>
+            </div>
+            <div class="main__register-svg-car">
+              <img src="/img/car.svg" alt="" />
+            </div>
           </div>
-          <div class="showcase__card">
-            <a href="/pages/camry.html" class="showcase__image-container">
-              <img
-                class="showcase__image"
-                src="img/toyota_camry_1000441 2.png"
-                alt=""
+          <form class="main__register-form" action="">
+            <p>
+              <label for="username">Эл. Почта</label>
+              <input class="main__register-form-input" type="text" required />
+            </p>
+            <p>
+              <label for="username">Номер телефона</label>
+              <input class="main__register-form-input" type="text" required />
+            </p>
+            <p>
+              <label for="password">Пароль</label>
+              <input
+                class="main__register-form-input"
+                type="password"
+                required
               />
-            </a>
-            <h1 class="showcase__title">Toyota Camry</h1>
-            <a href="/pages/camry.html" class="showcase__paragraph">
-              Посмотреть информацию
-            </a>
-          </div>
-          <div class="showcase__card">
-            <a href="/pages/crown.html" class="showcase__image-container">
-              <img
-                class="showcase__image"
-                src="img/toyota_crown_820621 2.png"
-                alt=""
-              />
-            </a>
-            <h1 class="showcase__title">Toyota Crown</h1>
-            <a href="/pages/crown.html" class="showcase__paragraph">
-              Посмотреть информацию
-            </a>
-          </div>
-          <div class="showcase__card">
-            <a href="/pages/chaser.html" class="showcase__image-container">
-              <img
-                class="showcase__image"
-                src="img/toyota_chaser_468684 2.png"
-                alt=""
-              />
-            </a>
-            <h1 class="showcase__title">Toyota Chaser</h1>
-            <a href="/pages/chaser.html" class="showcase__paragraph">
-              Посмотреть информацию
-            </a>
-          </div>
-          <div class="showcase__card">
-            <a href="/pages/accord.html" class="showcase__image-container">
-              <img
-                class="showcase__image"
-                src="img/honda_accord_853214 2.png"
-                alt=""
-              />
-            </a>
-            <h1 class="showcase__title">Honda Accord</h1>
-            <a href="/pages/accord.html" class="showcase__paragraph">
-              Посмотреть информацию
-            </a>
-          </div>
-          <div class="showcase__card">
-            <a href="/pages/supra.html" class="showcase__image-container">
-              <img
-                class="showcase__image"
-                src="img/toyota_supra_597589 2.png"
-                alt=""
-              />
-            </a>
-            <h1 class="showcase__title">Toyota Supra</h1>
-            <a href="/pages/supra.html" class="showcase__paragraph">
-              Посмотреть информацию
-            </a>
-          </div>
-          <div class="showcase__card">
-            <a href="/pages/markII.html" class="showcase__image-container">
-              <img
-                class="showcase__image"
-                src="img/toyota_mark_ii_462862 1.png"
-                alt=""
-              />
-            </a>
-            <h1 class="showcase__title">Toyota Mark II</h1>
-            <a href="/pages/markII.html" class="showcase__paragraph">
-              Посмотреть информацию
-            </a>
-          </div>
-          <div class="showcase__card">
-            <a href="/pages/cresta.html" class="showcase__image-container">
-              <img
-                class="showcase__image"
-                src="img/toyota_cresta_470182 1.png"
-                alt=""
-              />
-            </a>
-            <h1 class="showcase__title">Toyota Cresta</h1>
-            <a href="/pages/cresta.html" class="showcase__paragraph">
-              Посмотреть информацию
-            </a>
-          </div>
-          <div class="showcase__card">
-            <a href="/pages/ls300.html" class="showcase__image-container">
-              <img
-                class="showcase__image"
-                src="img/lexus_is300_282361 2.png"
-                alt=""
-              />
-            </a>
-            <h1 class="showcase__title">Lexus LS 300</h1>
-            <a href="/pages/ls300.html" class="showcase__paragraph">
-              Посмотреть информацию
-            </a>
-          </div>
-        </section>
+            </p>
+            <p>
+              <label for="username">Имя</label>
+              <input class="main__register-form-input" type="text" required />
+            </p>
+            <button class="main__register-form-button" type="submit">Ok</button>
+          </form>
+        </div>
       </div>
     </main>
+
     <div class="container">
       <footer class="footer">
         <div class="footer__social">
           <h3 class="footer__social-title">Мы в соц. сетях</h3>
           <a href="#" class="footer__logo-link">
-            <img src="img/vk.svg" alt="vk"
+            <img src="/img/vk.svg" alt="vk"
           /></a>
           <a href="#" class="footer__logo-link">
-            <img src="img/whatsapp.svg" alt="whatsapp"
+            <img src="/img/whatsapp.svg" alt="whatsapp"
           /></a>
         </div>
         <div class="footer__description">
@@ -234,7 +149,7 @@
             >
           </div>
           <div class="footer__description-container">
-            <img src="img/mail.svg" alt="" />
+            <img src="/img/mail.svg" alt="" />
             <a
               class="footer__description-container-mail"
               href="mailto: pavel.banshchikov.04@mail.ru"
@@ -242,7 +157,7 @@
             >
           </div>
           <div class="footer__description-container">
-            <img src="img/mail.svg" alt="" />
+            <img src="/img/mail.svg" alt="" />
             <a
               class="footer__description-container-mail"
               href="mailto: avernbklub@gmail.com"
@@ -253,9 +168,9 @@
         <div class="footer__pay">
           <h3 class="footer__pay-title">Принимаем к оплате</h3>
           <div class="footer__pay-images">
-            <img src="img/visa.svg" alt="visa" />
-            <img src="img/mir.svg" alt="mir" />
-            <img src="img/master.svg" alt="master" />
+            <img src="/img/visa.svg" alt="visa" />
+            <img src="/img/mir.svg" alt="mir" />
+            <img src="/img/master.svg" alt="master" />
           </div>
         </div>
       </footer>

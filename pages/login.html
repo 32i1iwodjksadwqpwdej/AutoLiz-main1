@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <title>Логин</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/normalize.css" />
   </head>
   <body>
     <header class="header">
@@ -27,32 +28,64 @@
           </form>
           <ul class="header__list">
             <li class="header__list-item">
-              <a href="pages/login.html" class="header__link">Вход</a>
+              <a href="/pages/login.html" class="header__link">Вход</a>
             </li>
             <li class="header__list-item">
-              <a href="#" class="header__link">Регистрация</a>
+              <a href="/pages/register.html" class="header__link"
+                >Регистрация</a
+              >
             </li>
             <li class="header__list-item">
-              <a href="#" class="header__link">Условия аренды</a>
+              <a href="/pages/conditions.html" class="header__link"
+                >Условия аренды</a
+              >
             </li>
             <li class="header__list-item">
-              <a href="#" class="header__link">Помощь</a>
+              <a href="/pages/help.html" class="header__link">Помощь</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <main class="main"></main>
+    <main class="main main--register">
+      <div class="container">
+        <h1 class="main__title main__title--login">
+          Аренда автомобилей в <span class="main__title-red">Якутске</span>
+        </h1>
+        <div class="main__login">
+          <div class="main__login-svg">
+            <div class="main__login-svg-back">
+              <a href="/index.html"><img src="/img/rowbacksvg.svg" alt="" /></a>
+            </div>
+            <div class="main__login-svg-car">
+              <img src="/img/car.svg" alt="" />
+            </div>
+          </div>
+          <form class="main__login-form" action="">
+            <p>
+              <label for="username">Логин</label>
+              <input class="main__login-form-input" type="text" required />
+            </p>
+            <p>
+              <label for="password">Пароль</label>
+              <input class="main__login-form-input" type="password" required />
+            </p>
+            <button class="main__login-form-button" type="submit">Вход</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
     <div class="container">
       <footer class="footer">
         <div class="footer__social">
           <h3 class="footer__social-title">Мы в соц. сетях</h3>
           <a href="#" class="footer__logo-link">
-            <img src="img/vk.svg" alt="vk"
+            <img src="/img/vk.svg" alt="vk"
           /></a>
           <a href="#" class="footer__logo-link">
-            <img src="img/whatsapp.svg" alt="whatsapp"
+            <img src="/img/whatsapp.svg" alt="whatsapp"
           /></a>
         </div>
         <div class="footer__description">
@@ -76,7 +109,7 @@
             </svg>
             <a
               class="footer__description-container-number"
-              href="+7(924) 878 86 85"
+              href="tel:+79248788685"
               >+7(924) 878 86 85</a
             >
           </div>
@@ -99,23 +132,23 @@
             </svg>
             <a
               class="footer__description-container-number"
-              href="+7(996) 915 01 20"
+              href="tel:+79969150120"
               >+7(996) 915 01 20</a
             >
           </div>
           <div class="footer__description-container">
-            <img src="img/mail.svg" alt="" />
+            <img src="/img/mail.svg" alt="" />
             <a
               class="footer__description-container-mail"
-              href="pavel.banshchikov.04@mail.ru"
+              href="mailto: pavel.banshchikov.04@mail.ru"
               >pavel.banshchikov.04@mail.ru</a
             >
           </div>
           <div class="footer__description-container">
-            <img src="img/mail.svg" alt="" />
+            <img src="/img/mail.svg" alt="" />
             <a
               class="footer__description-container-mail"
-              href="avernbklub@gmail.com"
+              href="mailto: avernbklub@gmail.com"
               >avernbklub@gmail.com</a
             >
           </div>
@@ -123,9 +156,9 @@
         <div class="footer__pay">
           <h3 class="footer__pay-title">Принимаем к оплате</h3>
           <div class="footer__pay-images">
-            <img src="img/visa.svg" alt="visa" />
-            <img src="img/mir.svg" alt="mir" />
-            <img src="img/master.svg" alt="master" />
+            <img src="/img/visa.svg" alt="visa" />
+            <img src="/img/mir.svg" alt="mir" />
+            <img src="/img/master.svg" alt="master" />
           </div>
         </div>
       </footer>
