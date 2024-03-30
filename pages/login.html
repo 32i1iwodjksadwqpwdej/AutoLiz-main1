@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/normalize.css" />
   </head>
   <body>
+    <script src="../scripts/main.js"></script>
     <header class="header">
       <div class="container">
         <nav class="navigation">
@@ -25,6 +26,7 @@
                 placeholder="Поиск"
               />
             </label>
+            <ul class="search__results"></ul>
           </form>
           <ul class="header__list">
             <li class="header__list-item">
@@ -56,7 +58,9 @@
         <div class="main__login">
           <div class="main__login-svg">
             <div class="main__login-svg-back">
-              <a href="/index.html"><img src="/img/rowbacksvg.svg" alt="" /></a>
+              <a href="/index.html"
+                ><img src="/img/rowbacksvg.svg" alt="" style="width: 50px"
+              /></a>
             </div>
             <div class="main__login-svg-car">
               <img src="/img/car.svg" alt="" />
