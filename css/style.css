@@ -64,11 +64,14 @@ p {
   top: 100%;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
-  padding: 10px;
+  z-index: 4;
+  display: grid;
+  gap: 8px;
 }
 
 .search__results--open {
   display: block;
+  padding: 10px;
 }
 
 .search__input {
@@ -97,10 +100,8 @@ p {
   padding-right: 8px;
 }
 
-.search__results {
+.search__results a {
   color: #000;
-  list-style: none;
-  text-decoration: none;
 }
 
 .header__link {
@@ -286,7 +287,6 @@ p {
 .main__help-form-input {
   border-radius: 26px;
   border: 1px solid #000;
-  opacity: 0.5;
   background-color: #fefefe;
   height: 28px;
   padding-left: 10px;

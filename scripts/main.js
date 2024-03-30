@@ -1,6 +1,10 @@
 "use strict"
 
 document.addEventListener("DOMContentLoaded", (event) => {
+    const form = document.querySelector('.main__login-form--pay');
+    form?.addEventListener('submit', (event) => {
+        alert('Оплата прошла успешно!')
+    })
     const search = document.querySelector('.search__input');
     const dropdown = document.querySelector('.search__results');
     const linksList = [
@@ -46,11 +50,16 @@ document.addEventListener("DOMContentLoaded", (event) => {
         if (text === "") {
             dropdown.classList.remove('search__results--open')
         } else {
-            dropdown.classList.add('search__results--open')
+            
             const filteredLinksList = linksList.filter(function (linkItem) {
                 return linkItem.carName.toLowerCase().includes(text)
             }
             )
+            if (filteredLinksList.length > 0) {
+                dropdown.classList.add('search__results--open')   
+            } else {
+                dropdown.classList.remove('search__results--open')
+            }
             dropdown.innerHTML = ''
             filteredLinksList.forEach(item => {
                 const li = document.createElement('li')
@@ -75,3 +84,4 @@ document.addEventListener("DOMContentLoaded", (event) => {
         showDropDown(event)
     } )
   });
+
