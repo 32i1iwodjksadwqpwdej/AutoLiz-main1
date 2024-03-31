@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const linksList = [
         {
             carName: 'Honda Accord', 
-            link: 'pages/accord.html'
+            link: `${window.location.origin}/pages/accord.html`
         },
         {
             carName: 'Toyota Camry', 
